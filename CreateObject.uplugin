@@ -1,0 +1,20 @@
+{
+    "FileVersion" : 3,
+	
+	"FriendlyName" : "CreateObject",
+	"Version" : 6,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Get Set Games Inc.",
+	"CreatedByURL" : "http://getsetgames.com",
+	"EngineVersion" : 1579795,
+	"Description" : "This adds a blueprint node that can be used to create an object as described here: https://wiki.unrealengine.com/Blueprint_Node:_Create_Object_from_Blueprint",
+	"Category" : "Game",
+	
+    "Modules" :
+	[
+		{
+			"Name" : "CreateObjectPlugin",
+			"Type" : "Runtime"
+		}
+	]
+}
