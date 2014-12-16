@@ -7,8 +7,5 @@
 
 UObject* UCreateObject::CreateObject(UObject* WorldContextObject, TSubclassOf<UObject> Class)
 {
-	UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject);
-	UObject* tempObject = StaticConstructObject(Class);
- 
-	return tempObject;
+	return StaticConstructObject(Class);
 }
