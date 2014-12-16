@@ -5,12 +5,6 @@
 
 #include "CreateObjectPluginPrivatePCH.h"
 
-UCreateObject::UCreateObject(const class FPostConstructInitializeProperties& PCIP)
-: Super(PCIP)
-{
- 
-}
-
 UObject* UCreateObject::CreateObject(UObject* WorldContextObject, TSubclassOf<UObject> Class)
 {
 	UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject);
