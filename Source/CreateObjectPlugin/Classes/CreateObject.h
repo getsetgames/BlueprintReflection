@@ -15,6 +15,6 @@ class UCreateObject : public UObject
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintCallable, meta = (HidePin = "WorldContextObject", DefaultToSelf = "WorldContextObject", Keywords = "new create object"), Category = Game)
+	UFUNCTION(BlueprintPure, meta = (HidePin = "WorldContextObject", DefaultToSelf = "WorldContextObject", Keywords = "new create object"), Category = Game)
 	static UObject* CreateObject(UObject* WorldContextObject, TSubclassOf<UObject> Class);
 };
