@@ -9,7 +9,7 @@
 #include "EdGraph/EdGraphSchema.h"
 #include "CreateObject.generated.h"
 
-UCLASS()
+UCLASS(NotBlueprintable)
 class UCreateObject : public UObject
 {
 	GENERATED_BODY()
