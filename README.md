@@ -1,6 +1,6 @@
 # Blueprint Reflection
 
-This is a plugin for UE4 that adds reflection capabilities to the blueprint system.
+This is a plugin for Unreal Engine 4 that adds reflection capabilities to the blueprint system.
 
 ## Functions
 
