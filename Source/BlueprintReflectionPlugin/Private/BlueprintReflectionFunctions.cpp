@@ -19,7 +19,7 @@ UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
 	return nullptr;
 }
 
-UObject* UBlueprintReflectionFunctions::CreateObjectFromClass(TSubclassOf<UObject> Class) {
+UObject* UBlueprintReflectionFunctions::ConstructObjectFromClass(TSubclassOf<UObject> Class) {
 	if (Class) {
 		return StaticConstructObject(Class);
 	}
@@ -27,6 +27,6 @@ UObject* UBlueprintReflectionFunctions::CreateObjectFromClass(TSubclassOf<UObjec
 	return nullptr;
 }
 
-UObject* UBlueprintReflectionFunctions::CreateObjectFromClassName(FString Name) {
-	return UBlueprintReflectionFunctions::CreateObjectFromClass(UBlueprintReflectionFunctions::GetClassByName(Name));
+UObject* UBlueprintReflectionFunctions::ConstructObjectFromClassName(FString Name) {
+	return UBlueprintReflectionFunctions::ConstructObjectFromClass(UBlueprintReflectionFunctions::GetClassByName(Name));
 }

@@ -16,8 +16,8 @@ public:
 	static UClass* GetClassByName(FString Name);
 	
 	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object"), Category = Game)
-	static UObject* CreateObjectFromClass(TSubclassOf<UObject> Class);
+	static UObject* ConstructObjectFromClass(TSubclassOf<UObject> Class);
 	
 	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object class name"), Category = Game)
-	static UObject* CreateObjectFromClassName(FString Name);
+	static UObject* ConstructObjectFromClassName(FString Name);
 };
