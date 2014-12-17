@@ -10,11 +10,13 @@
 #include "CreateObject.generated.h"
 
 UCLASS(NotBlueprintable)
-class UCreateObject : public UObject
-{
+class UCreateObject : public UObject {
 	GENERATED_BODY()
 	
 public:
 	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object"), Category = Game)
 	static UObject* CreateObject(TSubclassOf<UObject> Class);
+
+	UFUNCTION(BlueprintPure, meta = (Keywords = "class name"), Category = Game)
+	static UClass* GetClassByName(FString Name);
 };
