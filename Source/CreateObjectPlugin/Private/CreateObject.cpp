@@ -5,7 +5,7 @@
 
 #include "CreateObjectPluginPrivatePCH.h"
 
-UObject* UCreateObject::CreateObject(UObject* WorldContextObject, TSubclassOf<UObject> Class)
+UObject* UCreateObject::CreateObject(TSubclassOf<UObject> Class)
 {
 	return StaticConstructObject(Class);
 }
