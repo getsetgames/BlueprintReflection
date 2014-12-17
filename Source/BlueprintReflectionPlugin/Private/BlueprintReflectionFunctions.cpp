@@ -5,7 +5,7 @@
 
 #include "BlueprintReflectionPluginPrivatePCH.h"
 
-UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
+UClass* UBlueprintReflectionFunctions::GetClassByNameImpl(FString Name) {
 	UObject* ClassPackage = ANY_PACKAGE;
 	
 	if (UClass* result = FindObject<UClass>(ClassPackage, *Name)) {
@@ -16,6 +16,20 @@ UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
 		return CastChecked<UClass>(RenamedClassRedirector->DestinationObject);
 	}
 	
+	return nullptr;
+}
+
+UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
+	if (UClass *result = UBlueprintReflectionFunctions::GetClassByNameImpl(Name)) {
+		return result;
+	}
+	
+	Name.Append(TEXT("_C"));
+
+	if (UClass *result = UBlueprintReflectionFunctions::GetClassByNameImpl(Name)) {
+		return result;
+	}
+
 	return nullptr;
 }
 

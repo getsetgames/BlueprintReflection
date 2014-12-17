@@ -12,12 +12,15 @@ class UBlueprintReflectionFunctions : public UObject {
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintPure, meta = (Keywords = "class name"), Category = Game)
+	UFUNCTION(BlueprintPure, meta = (Keywords = "class name"), Category = Reflection)
 	static UClass* GetClassByName(FString Name);
 	
-	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object"), Category = Game)
+	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object"), Category = Reflection)
 	static UObject* ConstructObjectFromClass(TSubclassOf<UObject> Class);
 	
-	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object class name"), Category = Game)
+	UFUNCTION(BlueprintPure, meta = (Keywords = "new create object class name"), Category = Reflection)
 	static UObject* ConstructObjectFromClassName(FString Name);
+	
+private:
+	static UClass* GetClassByNameImpl(FString Name);
 };
