@@ -5,14 +5,6 @@
 
 #include "CreateObjectPluginPrivatePCH.h"
 
-UObject* UCreateObject::CreateObject(TSubclassOf<UObject> Class) {
-	if (Class) {
-		return StaticConstructObject(Class);
-	}
-	
-	return nullptr;
-}
-
 UClass* UCreateObject::GetClassByName(FString Name) {
 	UObject* ClassPackage = ANY_PACKAGE;
 	
@@ -25,4 +17,16 @@ UClass* UCreateObject::GetClassByName(FString Name) {
 	}
 	
 	return nullptr;
+}
+
+UObject* UCreateObject::CreateObjectFromClass(TSubclassOf<UObject> Class) {
+	if (Class) {
+		return StaticConstructObject(Class);
+	}
+	
+	return nullptr;
+}
+
+UObject* UCreateObject::CreateObjectFromClassName(FString Name) {
+	return UCreateObject::CreateObjectFromClass(UCreateObject::GetClassByName(Name));
 }
