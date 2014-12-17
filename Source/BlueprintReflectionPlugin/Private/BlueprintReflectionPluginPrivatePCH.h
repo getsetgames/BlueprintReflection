@@ -12,8 +12,8 @@
 // add includes for headers that are used in most of your module's source files though.
 #include "ModuleManager.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogCreateObject, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogBlueprintReflection, Log, All);
 
-#include "ICreateObjectPlugin.h"
+#include "IBlueprintReflectionPlugin.h"
 
-#include "CreateObjectPluginClasses.h"
+#include "BlueprintReflectionPluginClasses.h"

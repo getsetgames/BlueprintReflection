@@ -1,0 +1,18 @@
+{
+    "FileVersion" : 3,
+	"FriendlyName" : "Blueprint Reflection",
+	"Version" : 6,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Get Set Games Inc.",
+	"CreatedByURL" : "http://getsetgames.com",
+	"EngineVersion" : 1579795,
+	"Description" : "This plugin adds reflection capabilities to blueprint.",
+	"Category" : "Reflection",
+    "Modules" :
+	[
+		{
+			"Name" : "BlueprintReflectionPlugin",
+			"Type" : "Runtime"
+		}
+	]
+}

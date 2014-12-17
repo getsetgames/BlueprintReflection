@@ -5,10 +5,10 @@
 
 #pragma once
 
-#include "CreateObject.generated.h"
+#include "BlueprintReflectionFunctions.generated.h"
 
 UCLASS(NotBlueprintable)
-class UCreateObject : public UObject {
+class UBlueprintReflectionFunctions : public UObject {
 	GENERATED_BODY()
 	
 public:

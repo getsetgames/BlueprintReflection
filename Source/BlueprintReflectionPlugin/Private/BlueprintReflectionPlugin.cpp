@@ -3,9 +3,9 @@
 //  Copyright (c) 2014 Get Set Games Inc. All rights reserved.
 //
 
-#include "CreateObjectPluginPrivatePCH.h"
+#include "BlueprintReflectionPluginPrivatePCH.h"
 
-class FCreateObjectPlugin : public ICreateObjectPlugin
+class FBlueprintReflectionPlugin : public IBlueprintReflectionPlugin
 {
 	/** IModuleInterface implementation */
 	virtual void StartupModule() override
@@ -19,6 +19,6 @@ class FCreateObjectPlugin : public ICreateObjectPlugin
 	}
 };
 
-IMPLEMENT_MODULE( FCreateObjectPlugin, CreateObjectPlugin )
+IMPLEMENT_MODULE( FBlueprintReflectionPlugin, BlueprintReflectionPlugin )
 
-DEFINE_LOG_CATEGORY(LogCreateObject);
+DEFINE_LOG_CATEGORY(LogBlueprintReflection);

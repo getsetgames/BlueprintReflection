@@ -7,7 +7,7 @@ using System.IO;
 
 namespace UnrealBuildTool.Rules
 {
-	public class CreateObjectPlugin : ModuleRules
+	public class BlueprintReflectionPlugin : ModuleRules
 	{
         private string ModulePath
         {
@@ -19,11 +19,11 @@ namespace UnrealBuildTool.Rules
             get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
         }
 
-		public CreateObjectPlugin(TargetInfo Target)
+		public BlueprintReflectionPlugin(TargetInfo Target)
 		{
 			PrivateIncludePaths.AddRange(
 				new string[] {
-					"CreateObjectPlugin/Private",
+					"BlueprintReflectionPlugin/Private",
 				});
 
 			PublicDependencyModuleNames.AddRange(

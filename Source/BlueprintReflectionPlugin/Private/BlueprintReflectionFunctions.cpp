@@ -3,9 +3,9 @@
 //  Copyright (c) 2014 Get Set Games Inc. All rights reserved.
 //
 
-#include "CreateObjectPluginPrivatePCH.h"
+#include "BlueprintReflectionPluginPrivatePCH.h"
 
-UClass* UCreateObject::GetClassByName(FString Name) {
+UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
 	UObject* ClassPackage = ANY_PACKAGE;
 	
 	if (UClass* result = FindObject<UClass>(ClassPackage, *Name)) {
@@ -19,7 +19,7 @@ UClass* UCreateObject::GetClassByName(FString Name) {
 	return nullptr;
 }
 
-UObject* UCreateObject::CreateObjectFromClass(TSubclassOf<UObject> Class) {
+UObject* UBlueprintReflectionFunctions::CreateObjectFromClass(TSubclassOf<UObject> Class) {
 	if (Class) {
 		return StaticConstructObject(Class);
 	}
@@ -27,6 +27,6 @@ UObject* UCreateObject::CreateObjectFromClass(TSubclassOf<UObject> Class) {
 	return nullptr;
 }
 
-UObject* UCreateObject::CreateObjectFromClassName(FString Name) {
-	return UCreateObject::CreateObjectFromClass(UCreateObject::GetClassByName(Name));
+UObject* UBlueprintReflectionFunctions::CreateObjectFromClassName(FString Name) {
+	return UBlueprintReflectionFunctions::CreateObjectFromClass(UBlueprintReflectionFunctions::GetClassByName(Name));
 }

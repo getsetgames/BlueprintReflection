@@ -12,7 +12,7 @@
  * The public interface to this module.  In most cases, this interface is only public to sibling modules 
  * within this plugin.
  */
-class ICreateObjectPlugin : public IModuleInterface
+class IBlueprintReflectionPlugin : public IModuleInterface
 {
 
 public:
@@ -23,9 +23,9 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static inline ICreateObjectPlugin& Get()
+	static inline IBlueprintReflectionPlugin& Get()
 	{
-		return FModuleManager::LoadModuleChecked< ICreateObjectPlugin >( "CreateObjectPlugin" );
+		return FModuleManager::LoadModuleChecked< IBlueprintReflectionPlugin >( "BlueprintReflectionPlugin" );
 	}
 
 	/**
@@ -35,7 +35,7 @@ public:
 	 */
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded( "CreateObjectPlugin" );
+		return FModuleManager::Get().IsModuleLoaded( "BlueprintReflectionPlugin" );
 	}
 };
 

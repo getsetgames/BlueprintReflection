@@ -1,9 +1,17 @@
-# CreateObject
+# Blueprint Reflection
 
-This is a plugin for UE4 that adds a blueprint node that can be used to create an object as described on [the Unreal Engine wiki](https://wiki.unrealengine.com/Blueprint_Node:_Create_Object_from_Blueprint).
+This is a plugin for UE4 that adds reflection capabilities to the blueprint system.
 
-## Create Object Blueprint Function
+## Features
 
-The Create Object blueprint function can be used to create an instance of any class that derives from Object (UObject). See it in action below:
+### Function: Get Class By Name
 
-![SCREENSHOT](SCREENSHOT.jpg)
+The Get Class By Name blueprint function can be used to retrieve the Class (UClass) object of a class by providing the name of the class.
+
+### Function: Create Object From Class
+
+The Create Object From Class blueprint function can be used to create an instance of any class that derives from Object (UObject).
+
+### Function: Create Object From Class Name
+
+The Create Object From Class Name blueprint function can be used to create an instance of any class that derives from Object (UObject) by providing the name of the class.
