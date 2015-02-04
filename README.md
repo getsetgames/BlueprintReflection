@@ -13,8 +13,8 @@ There are a couple of different ways to integrate this plugin into your project.
 This method includes the plugin in your fork of the UE4 engine. It allows you to use the plugin in either code or blueprint-based projects that are created with your fork of the engine. It assumes you have already cloned the UE4 engine to a directory on your machine.
 
 1. Clone this repo to a subfolder of your engine called /Engine/Plugins/BlueprintReflection folder. Optionally, you can add it as a submodule.
-2. Run the GenerateProjectFiles script in the Engine root
-3. Open your engine project file and build the editor
+2. Run the GenerateProjectFiles script in the Engine root.
+3. Open your engine project file and build the editor.
 
 #### In your code project
 
