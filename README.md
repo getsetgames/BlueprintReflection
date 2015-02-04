@@ -18,6 +18,6 @@ The Construct Object From Class blueprint function can be used to create an inst
 
 ### Construct Object From Class Name
 
-The Construct Object From Class Name blueprint function can be used to create an instance of any class that derives from Object (UObject) by providing the name of the class.
+The Construct Object From Class Name blueprint function can be used to create an instance of any class that derives from Object (UObject) by providing the name of the class. This effectively runs GetClassByName and ConstructObjectFromClass in one call.
 
 ![ConstructObjectFromClassName](ConstructObjectFromClassName.png)
