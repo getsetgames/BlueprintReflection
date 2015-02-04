@@ -1,6 +1,6 @@
 # Blueprint Reflection
 
-This is a plugin for Unreal Engine 4 that adds reflection capabilities to the blueprint system.
+This is a plugin for Unreal Engine 4 that adds reflection capabilities to the blueprint system. For example, this allows you to retrieve a Class by its name and construct an instance of it from blueprint.
 
 ## Usage
 
