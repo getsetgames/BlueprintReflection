@@ -8,7 +8,7 @@ This is a plugin for Unreal Engine 4 that adds reflection capabilities to the bl
 
 There are a couple of different ways to integrate this plugin into your project. You can include it in your fork of the UE4 engine or you can include it in a single UE4 code-based project if you like.
 
-#### As part of your fork of the engine
+#### In your engine
 
 This method includes the plugin in your fork of the UE4 engine. It allows you to use the plugin in either code or blueprint-based projects that are created with your fork of the engine. It assumes you have already cloned the UE4 engine to a directory on your machine.
 
