@@ -32,7 +32,7 @@ Ensure that the plugin is enabled:
 2. Search for the plugin called Blueprint Reflection. It's in the Reflection category.
 3. Check the Enabled checkbox on the plugin. You may have to restart the editor after this step.
 
-![EnableThePlugin](EnableThePlugin.png)
+![EnableThePlugin](Resources/EnableThePlugin.png)
 
 That's it! Now open up a blueprint in your project and try out the following functions.
 
@@ -42,16 +42,16 @@ That's it! Now open up a blueprint in your project and try out the following fun
 
 The Get Class By Name blueprint function can be used to retrieve a Class (UClass) object by providing its name.
 
-![GetClassByName](GetClassByName.png)
+![GetClassByName](Resources/GetClassByName.png)
 
 ### Construct Object From Class
 
 The Construct Object From Class blueprint function can be used to create an instance of any class that derives from Object (UObject).
 
-![ConstructObjectFromClass](ConstructObjectFromClass.png)
+![ConstructObjectFromClass](Resources/ConstructObjectFromClass.png)
 
 ### Construct Object From Class Name
 
 The Construct Object From Class Name blueprint function can be used to create an instance of any class that derives from Object (UObject) by providing the name of the class. This effectively runs GetClassByName and ConstructObjectFromClass in one call.
 
-![ConstructObjectFromClassName](ConstructObjectFromClassName.png)
+![ConstructObjectFromClassName](Resources/ConstructObjectFromClassName.png)
