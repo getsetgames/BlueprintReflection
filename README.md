@@ -38,7 +38,7 @@ Ensure that the plugin is enabled:
 
 Blueprint classes that are instanced using this method may not get cooked during the packaging process if they aren't referenced anywhere in your game. Because of this, you have to add blueprint classes that you intend to spawn using these functions to a list of content that always gets cooked.
 
-Do this by going to Project Settings > Packaging and add any directories that contain blueprint classes that you plan to use reflection to access.
+Do this by going to Project Settings > Packaging and add any directories that contain blueprint classes that you plan to use reflection to access to a list called Additional Asset Directories to Cook.
 
 ![PackagingSettings](Resources/PackagingSettings.png)
 
