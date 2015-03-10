@@ -34,6 +34,14 @@ Ensure that the plugin is enabled:
 
 ![EnableThePlugin](Resources/EnableThePlugin.png)
 
+### Ensure Your Content Gets Cooked
+
+Blueprint classes that are instanced using this method may not get cooked during the packaging process if they aren't referenced anywhere in your game. Because of this, you have to add blueprint classes that you intend to spawn using these functions to a list of content that always gets cooked.
+
+Do this by going to Project Settings > Packaging and add any directories that contain blueprint classes that you plan to use reflection to access.
+
+![PackagingSettings](Resources/PackagingSettings.png)
+
 That's it! Now open up a blueprint in your project and try out the following functions.
 
 ## Functions
