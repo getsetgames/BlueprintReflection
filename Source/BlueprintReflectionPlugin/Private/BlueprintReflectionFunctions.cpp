@@ -29,6 +29,8 @@ UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
 		return result;
 	}
 	
+	UE_LOG(LogBlueprintReflection, Log, TEXT("Could not find class in memory, searching asset registry for class: %s"), *Name);
+
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>(FName("AssetRegistry"));
 	IAssetRegistry& AssetRegistry = AssetRegistryModule.Get();
 	
