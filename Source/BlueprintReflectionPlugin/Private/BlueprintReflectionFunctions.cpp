@@ -57,7 +57,7 @@ UClass* UBlueprintReflectionFunctions::GetClassByName(FString Name) {
 
 UObject* UBlueprintReflectionFunctions::ConstructObjectFromClass(TSubclassOf<UObject> Class) {
 	if (Class) {
-		return StaticConstructObject(Class);
+		return StaticConstructObject_Internal(Class);
 	}
 	
 	return nullptr;
