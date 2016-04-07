@@ -9,16 +9,6 @@ namespace UnrealBuildTool.Rules
 {
 	public class BlueprintReflectionPlugin : ModuleRules
 	{
-        private string ModulePath
-        {
-            get { return Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name)); }
-        }
-
-        private string ThirdPartyPath
-        {
-            get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
-        }
-
 		public BlueprintReflectionPlugin(TargetInfo Target)
 		{
 			PrivateIncludePaths.AddRange(
