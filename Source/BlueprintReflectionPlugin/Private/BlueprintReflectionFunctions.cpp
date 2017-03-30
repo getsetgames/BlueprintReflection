@@ -3,8 +3,10 @@
 //  Copyright (c) 2014 Get Set Games Inc. All rights reserved.
 //
 
+#include "BlueprintReflectionFunctions.h"
 #include "BlueprintReflectionPluginPrivatePCH.h"
 #include "AssetRegistryModule.h"
+#include "ARFilter.h"
 
 UClass* UBlueprintReflectionFunctions::GetClassByNameImpl(FString Name) {
 	if (UClass* result = FindObject<UClass>(ANY_PACKAGE, *Name)) {
