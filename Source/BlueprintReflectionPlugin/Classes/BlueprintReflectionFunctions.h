@@ -5,6 +5,9 @@
 
 #pragma once
 
+#include "UObject/Object.h"
+#include "UObject/ScriptMacros.h"
+#include "Templates/SubclassOf.h"
 #include "BlueprintReflectionFunctions.generated.h"
 
 UCLASS(NotBlueprintable)

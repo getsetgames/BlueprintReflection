@@ -7,6 +7,7 @@
 #include "BlueprintReflectionPluginPrivatePCH.h"
 #include "AssetRegistryModule.h"
 #include "ARFilter.h"
+#include "Engine/Blueprint.h"
 
 UClass* UBlueprintReflectionFunctions::GetClassByNameImpl(FString Name) {
 	if (UClass* result = FindObject<UClass>(ANY_PACKAGE, *Name)) {
