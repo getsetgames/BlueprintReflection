@@ -9,7 +9,7 @@ namespace UnrealBuildTool.Rules
 {
 	public class BlueprintReflectionPlugin : ModuleRules
 	{
-		public BlueprintReflectionPlugin(TargetInfo Target)
+		public BlueprintReflectionPlugin(ReadOnlyTargetRules Target) : base(Target)
 		{
 			PrivateIncludePaths.AddRange(
 				new string[] {
